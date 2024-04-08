@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+  <body>
+    <h1>Hello There!</h1>
+    <img src="Profile.jpg" alt="Profile" />
+    <p>
+      Welcome to my profile! I'm Aqilla Rachel Rabbani, a Student from SMK Telekomunikasi Sandhy Putra Purwokerto passionate about web tech, mainly web design and development. Here, you'll find insights into social media accounts and
+      projects. Thanks for visiting, and enjoy exploring!
+    </p>
+    <h3>Phone Number</h3>
+    <table>
+      <tr>
+        <td><a href="#" id="myLink">Phone Number : +62 858 7933 4272</a></td>
+      </tr>
+    </table>
+    <h3>Socials</h3>
+    <table>
+      <tr>
+        <td><a href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=arachelrabbani@gmail.com">Email</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/aeaacel">Github Account</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://wa.me/6285879334272">WhatsApp Account</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://www.instagram.com/atheaceel?igsh=MTB3bnYwcG0zc2RkZA==">Instagram Account</a></td>
+      </tr>
+    </table>
+    <h3>Projects</h3>
+    <table>
+      <tr>
+        <td><a href="https://aeaacel.github.io/PTSGANJILWEB/">E-Commerce Website</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://aeaacel.github.io/NusantaraRebellion/">Quiz Game "Nusantara Rebellion"</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://aeaacel.github.io/AQILLA_RACHEL_R_XIPPLG2_UAS_MK3/">JavaScript Tetris Game</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://www.figma.com/file/cltOjdATwV6D7ZmLdpLa7p/Catties?type=design&node-id=0%3A1&mode=design&t=L6gmTA1mU743BU0b-1">Prototype of a Forward Chaining Cat Disease Diagnosis Website</a></td>
+      </tr>
+    </table>
+    <footer>&copy; 2024 Aqilla Rachel Rabbani. All rights reserved.</footer>
+    <script>
+    document.getElementById('myLink').addEventListener('click', function(event) {
+      event.preventDefault();
+      var phonenumber = "+62-858-7933-4272"; 
+      swal({
+        title: "Teks berhasil disalin",
+        text: phonenumber,
+        icon: "success",
+        buttons: {
+          confirm: {
+            text: "OK",
+            value: true,
+            visible: true,
+            className: "btn-primary",
+            closeModal: true
+          }
+        }
+      });
+      navigator.clipboard.writeText(phonenumber).then(function() {
+        console.log('Teks berhasil disalin ke clipboard');
+      });
+    });
+    </script>
+  </body>
+</html>
